@@ -1,6 +1,6 @@
 <div align='center'>
-    <img src="./images/head.jpg" alt="happy-llm" width="100%">
-    <h1>datawhalechina的happy-llm小组学习笔记</h1>
+    <img src="./images/head.png" alt="happy-llm" width="200">
+    <h1>datawhale china的happy-llm小组学习笔记</h1>
     <h3>红旗小分队-PureEngery</h3>
 </div>
 
