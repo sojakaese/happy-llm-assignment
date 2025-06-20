@@ -92,7 +92,7 @@ result = torch.matmul(A, B)   # 形状 (5,3,4,1)
 在Transformer的实现中，`torch.matmul` 是构建注意力机制的关键工具，它高效地实现了查询和键之间的相似度计算，使模型能够动态关注输入序列的不同部分。
 
 
-## Dropout 介绍
+## torch.nn.Dropout 介绍
 在 PyTorch 中，`self.dropout` 是 `nn.Dropout` 类的一个实例，这是一种常用的**正则化技术**，用于防止神经网络过拟合。以下是关于 `self.dropout` 的详细解释：
 
 ### 1. Dropout 的基本原理
@@ -220,7 +220,7 @@ def forward(self, x):
 1. **正则化核心**：通过随机丢弃神经元防止过拟合
 2. **训练/测试差异**：仅在训练阶段激活
 3. **自动缩放**：保持输出期望值一致
-4. **实现简单**：在 PyTorch 中通过 `nn.Dropout` 轻松实现
+4. **实现简单**：在 PyTorch 中通过 `torch.nn.Dropout` 轻松实现
 5. **超参数敏感**：丢弃率需要根据模型大小调整
 
 在 Transformer 的 MLP 模块中，Dropout 是确保模型泛化能力的关键组件，与 LayerNorm 和残差连接共同构成了稳定的训练框架。
