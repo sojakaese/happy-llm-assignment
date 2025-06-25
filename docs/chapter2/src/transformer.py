@@ -326,7 +326,7 @@ class Transformer(nn.Module):
 def main():
     args = ModelArgs(100, 10, 100, 0.1, 512, 1000, 1000, 2)
     # text = "我喜欢快乐地学习大模型"
-    text = "喜欢快乐地学习大模型"
+    text = "喜欢快乐地学习大模"
     tokenizer = BertTokenizer.from_pretrained('bert-base-chinese')
     inputs_token = tokenizer(
         text,
